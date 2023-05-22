@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+  calc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+
+    network_mode: host
+    volumes:
+      - ./calc:/calc
+      - ./tmp:/tmp
+
+    #entrypoint: tail -f /dev/null
+    entrypoint: sh /make-rating.sh

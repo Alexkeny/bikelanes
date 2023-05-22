@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+*~
+*.egg-info
+.DS_Store
+build
+dist
+__pycache_
+data
+.hg
+deploy.sh
